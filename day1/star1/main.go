@@ -1,7 +1,7 @@
 package main
 
 import (
-	"AdventOfCode2021/internal"
+	"AdventOfCode2021/day1/internal"
 	"fmt"
 	"strconv"
 )

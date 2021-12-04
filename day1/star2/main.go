@@ -1,7 +1,7 @@
 package main
 
 import (
-	"AdventOfCode2021/internal"
+	"AdventOfCode2021/day1/internal"
 	"fmt"
 )
 
@@ -15,7 +15,7 @@ Solution for part 2
 */
 
 /*
-This version scans in all values into memory then walks the values to compute the triplets.
+Version2 scans in all values into memory then walks the values to compute the triplets.
 It is 2.7x slower than Version1() but uses 2.5x less space
 
 cpu: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
@@ -41,7 +41,7 @@ func Version2() int {
 }
 
 /*
-This version scans values one at a time and creates a length 3 array to hold it followed by back filling the value into the previous two triplet arrays.
+Version1 scans values one at a time and creates a length 3 array to hold it followed by back filling the value into the previous two triplet arrays.
 After the back fill it checks if the previous two
 It is 2.7x faster than Version2() but uses 2.5x more space
 
